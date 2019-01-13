@@ -1,0 +1,149 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  background-color: #f4f4f4;
+}
+
+.mainContent {
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: #fff;
+  box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+/* header */
+.title {
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  background-color: #333;
+  text-decoration: none;
+}
+
+a {
+  color: #f4f4f4;
+}
+
+/* content */
+
+.text_Title {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 15px;
+}
+
+.table2Item {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  left: 25px;
+}
+
+.table2Item .time{
+    position: relative;
+    left: 28px;
+}
+
+.table2Item .name{
+    position: relative;
+    left: 55px;
+}
+
+.table2Item .phone{
+    position: relative;
+    left: 75px;
+}
+
+.table2Item .item{
+  position: relative;
+  left: 106px;
+}
+
+
+.text2{
+  position: relative;
+}
+
+.text2_Item {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 30px;
+}
+
+.text2_Date {
+  position: relative;
+  left: 75px;
+}
+
+.text2_Time {
+  position: relative;
+  left: 80px;
+}
+
+.text2_Name {
+  position: relative;
+  left: 85px;
+}
+
+.text2_Phone {
+  position: relative;
+  left: 85px;
+}
+
+.text2_Haire {
+  position: relative;
+  left: 105px;
+}
+
+.reserveSend {
+  position: relative;
+  left: 45px;
+  border-radius: 25px;
+  padding: 2px 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+
+.col-6 li {
+  float: left;
+  position: relative;
+  width: 16.666%;
+  text-align: center;
+} 
+
+.resuleBotton{
+    position: relative;
+    left: 42px;
+    border-radius: 25px;
+    padding: 2px 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.resultSend{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    padding: 2px 10px;
+    cursor: pointer;
+    background-color: #eaeaea;
+}
+
+
+/* footer */
+#footer {
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 25px;
+}

@@ -1,0 +1,83 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  background-color: #f4f4f4;
+}
+
+.mainContent {
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: #fff;
+  box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.title {
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  background-color: #333;
+  text-decoration: none;
+}
+
+a {
+  color: #f4f4f4;
+}
+
+.text_Title {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 15px;
+}
+
+.table1_li {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.send {
+  border-radius: 25px;
+  padding: 2px 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.col-4 li {
+  float: left;
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+
+
+.setList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.setList .setItem {
+  left: 65px;
+}
+
+.setList .setTime {
+  left: 105px;
+}
+
+.setList .setMoney {
+  left: 145px;
+}
+
+.setList .setSend {
+  position: relative;
+  left: 56px;
+  border-radius: 25px;
+  padding: 2px 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+}
+

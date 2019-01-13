@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/setBar.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="mainContent">
+<div id="head">
+  <h1 class="title">
+  <a href="/contact" target="_blank" >預約表單</a>
+  </h1>
+</div>
+<div id="content">
+  <div class="text1">
+      <div class="text_Title">服務設定</div>
+      <div class="table1">
+        <ul class='table1_li' autocomplete="off">
+          <li>服務項目
+            <input type="text" name='item' id='item' class='item' autocomplete="off">
+          </li>
+          <li>服務時間
+            <input type="text" name='time' id='time' class='time'> 
+          </li>
+          <li>服務價格
+            <input type="text" name='money' id='money' class='money'> 
+          </li>
+          <li>
+            <input type="submit" value='設定' id='send' class='send'> 
+          </li>
+        </ul>
+      </div>
+      <div class="changeList clearfix">
+        <%for(setitem in setlists){%>
+        <ul class='setList col-4'>
+          <li class='setItem'><%- setlists[setitem].item%></li>
+          <li class='setTime'><%- setlists[setitem].time%></li>
+          <li class='setMoney'><%- setlists[setitem].money%></li>
+          <li><input type='button' value='刪除' class='setSend' data-change='<%- setitem%>'></li>
+        </ul>
+        <%}%>
+      </div>
+  </div>
+  <%include messageBoard%>
+</div>
+    <script src='/js/bar.js'></script>
+</body>
+</html>

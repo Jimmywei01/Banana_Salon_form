@@ -1,0 +1,115 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html{
+  background-color: #f4f4f4;
+}
+
+.mainContent{
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: #fff;
+}
+
+/* header */
+.title{
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* content */
+.select_Service{
+    text-align: center;
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+.dataItem {
+    margin: 0;
+    padding: 10px 25px;
+    width: 45%;
+    float: left;
+    position: relative;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #eaeaea;
+}
+
+.dataItem:hover {
+  background-color: #eaeaea;
+}
+.active {
+  background-color: #eaeaea;
+}
+
+.item_col-2{
+  margin: 50px auto;
+}
+.item_col-2 li{
+    text-align: center;
+} 
+
+.radio{
+  display: none;
+}
+
+.formData{
+      padding: 25px;
+      box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.creatData{
+  text-align: center;
+  margin: 6px 0 36px;
+}
+
+.col-6{
+  width: 50%;
+  float: left;
+}
+
+.formType {
+      border-width: 0;
+      border-bottom: 1px solid;
+      background-color: #fff;
+      width: 55%;
+      height: 48px;
+      border-color: #eaeaea;
+      outline:none;
+      }
+
+text{
+      padding: 2px; 
+      color: #d9534f;
+}      
+
+.area{
+      height: 60px;
+      display: block;
+      line-height: 60px;
+      width: 100%;
+}
+
+textarea {
+  resize: none;
+  border-color: #eaeaea;
+  outline: none;
+}
+
+.submit{
+      margin: 48px auto;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      color: #fff;
+      background-color: #536076;
+      min-width: 240px;
+      padding: 7px 20px;
+      cursor: pointer;
+}

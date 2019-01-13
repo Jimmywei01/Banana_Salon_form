@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <title>Document</title>
+</head>
+
+<body>
+<div class="mainContent">
+
+<div id="header">
+  <h1 class="title">Banana Salon</h1>
+</div>
+
+<div id="content">
+    <div class="select_Service">選取服務</div>
+    <div class='item_col-2 itemData  clearfix' id="addClass">
+    </div>
+
+
+    <form action="/contact/post" method="post" class='formData' autocomplete="off">
+        <input type="hidden" name="_csrf" value="<%= csrfToken%>">
+        <div class="creatData">新增您的詳細資料</div>
+        <div class="rows clearfix">
+          <div class="leftForm col-6" >
+            <div>
+                <label for="username">姓　　名：</label>
+                <input type="text" name="username" id="username" class='formType' placeholder='王小明' />
+                <text><%= errors%></text>
+            </div>
+            <div>
+                <label for="email">電子郵件：</label>
+                <input type="text" name="email" id="email" class='formType'placeholder="xxx@gamil.com"/>
+               <text><%= errors2%></text>
+            </div>
+            <div>
+                <label for="phone">電話號碼：</label>
+                <input type="text" autocomplete="off" name="phone" id="phone" class='formType' placeholder='0988123456'/>
+                <text><%= errors3%></text>
+            </div>
+            <div>
+              <label for="date">預約日期：</label>
+              <input type="date"  name="date" id="date" class='formType' >
+             <text><%= errors4%></text>
+            </div>
+            <div>
+              <label for="dateTime">預約時間：</label>
+                <select class='formType'  name="dateTime" id='dateTime'>
+                    <option selected="selected"></option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                </select>
+                <text><%= errors5%></text>
+            </div>
+            <div>
+                <label for="item">預約項目：</label>
+                <input type="text" name="item" id="item" class='formType'/>
+                <text><%= errors6%></text>
+            </div>
+          </div>
+  
+        
+          <div class="rightForm col-6">
+            <div>
+                  <label for="description" class='area'>請讓我們知道您是否有任何特殊的要求：</label>
+                  <textarea name="description" id="description" cols="50" rows="10"></textarea>
+              </div>
+          </div>
+        </div>
+        <div>
+            <input type="submit" value="預約" id='submit' class='submit'/>
+        </div>
+    </form>
+</div>
+</div>
+
+<script src='/js/all.js'></script>
+
+
+</body>
+
+</html>
