@@ -19,16 +19,19 @@ https://secret-stream-64479.herokuapp.com/
 
 ## 前台內容介紹
 ### 預約表單
-- 可利用後台設定的預約項目預約，預約成功寄送 mail 通知
+* 可利用後台設定的預約項目預約，預約成功寄送 mail 通知
+
 ![](https://github.com/Jimmywei01/Banana_Salon_form/blob/master/public/img/demo1.png)
 
 ### mail 寄送通知
-- 顯示客戶預約項目、日期、時間
+* 顯示客戶預約項目、日期、時間
+
 ![](https://github.com/Jimmywei01/Banana_Salon_form/blob/master/public/img/demo2.png)
 
 ## 後台內容介紹
 ### 預約項目 ＆ 預約結果 
-- 管理前台所需資料內容，可刪除/新增/更新
+* 管理前台所需資料內容，可刪除/新增/更新
+
 ![](https://github.com/Jimmywei01/Banana_Salon_form/blob/master/public/img/demo3.png)
 
 ## Statement
