@@ -2,7 +2,7 @@ let text2Item = document.getElementById('text2Item')
 let list = document.querySelector('.list')
 let resuleBotton = document.querySelector('.resuleBotton')
 
-
+// 更新(重新撈取資料)
 resuleBotton.addEventListener('click',function(){
   var xhr = new XMLHttpRequest()
   xhr.open('post', '/messageBoard/result')
